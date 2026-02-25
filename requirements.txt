@@ -1,3 +1,2 @@
 flask
-algoliasearch==2.6.0
 gunicorn
