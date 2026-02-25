@@ -1,7 +1,7 @@
 import os
 from flask import Flask, jsonify
-from algoliasearch.search.client import SearchClient
 from algoliasearch.search_client import SearchClient
+
 app = Flask(__name__)
 
 ALGOLIA_APP_ID = os.environ.get("ALGOLIA_APP_ID")
