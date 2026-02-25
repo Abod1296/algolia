@@ -8,7 +8,7 @@ ALGOLIA_APP_ID = os.environ.get("ALGOLIA_APP_ID")
 ALGOLIA_SEARCH_KEY = os.environ.get("ALGOLIA_SEARCH_KEY")
 ALGOLIA_INDEX = os.environ.get("ALGOLIA_INDEX")
 
-client = SearchClient(ALGOLIA_APP_ID, ALGOLIA_SEARCH_KEY)
+client = SearchClient.create(ALGOLIA_APP_ID, ALGOLIA_SEARCH_KEY)
 index = client.init_index(ALGOLIA_INDEX)
 
 @app.route("/")
